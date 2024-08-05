@@ -1,29 +1,20 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+    <head>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="generate-pw-container">
-             <h1 class="title">Generate a <span class="accent-txt">random password</span></h1>
-              <p class="subtitle">Never use an insecure password again.</p>
-        <div class="actions">
-        <button class="generate-passwords-btn"><img src="./icon1.png" alt='lightning icon' >Generate passwords</button>
-        <input type="number" min="8" max="15" placeholder="change password length" class="change-password-length" >
+        <h1>Generate a</h1>
+        <h2>random password</h2>
+        <h4>never use an insecure password again.</h4>
+        <div>
+            <button id="generate">Generate passwords</button>
+            <input id="input" type="number" name="num"  min="8" max="20" pattern="[8-20]" title="Numbers only" step="1" placeholder="Please enter password length" onkeyup="if(value<8) value=8;" onkeydown="if(value>20) value=20;">
         </div>
-        <div class="display-passwords-container">
-            <div class="pw-display one"></div>
-             <div class="pw-display two"></div>
-              <div class="pw-display three row"></div>
-               <div class="pw-display four row"></div>
-             
-            
+        <hr>
+        <div>
+            <button class="btn" id="pass1">222</button>
+            <button class="btn" id="pass2">222</button>
         </div>
-        
-        </div>
-
-        <script src="index.pack.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
